@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Weather Web App Suite]">
+  <listeners>
+    <listener class-name="com.weather.extent_report.ExtentListener"/>
+  </listeners>
+  <test name="Big Web Tests">
+    <classes>
+      <class name="com.weather.homepagetests.CovidPageTests"/>
+    </classes>
+  </test> <!-- Big Web Tests -->
+  <test name="Big Web Tests(failed)">
+    <classes>
+      <class name="com.weather.homepagetests.CovidPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateCovidPageHeader"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.weather.homepagetests.CovidPageTests -->
+    </classes>
+  </test> <!-- Big Web Tests(failed) -->
+</suite> <!-- Failed suite [Weather Web App Suite] -->

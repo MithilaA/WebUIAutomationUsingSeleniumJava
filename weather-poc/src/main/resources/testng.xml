@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Weather Web App Suite" >
+<listeners>
+	<listener class-name="com.weather.extent_report.ExtentListener"></listener>
+</listeners>
+
+	<test name = "Big Web Tests">
+	<classes>
+		<class name="com.weather.homepagetests.HomePageTests"/>
+      </classes>	
+	</test>
+</suite>
